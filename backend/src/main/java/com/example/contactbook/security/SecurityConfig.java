@@ -47,7 +47,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
         // TODO: replace with your real Vercel URL once deployed, e.g. https://contact-book.vercel.app
-        config.setAllowedOrigins(List.of("http://localhost:5173", "https://your-app.vercel.app"));
+        config.allowedOrigins("https://contact-book-psi-flax.vercel.app","http://localhost:5173")
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("Authorization", "Content-Type"));
 
